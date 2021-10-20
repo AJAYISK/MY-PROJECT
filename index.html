@@ -1,53 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN PAGE</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-		/* code by Ajayi Olasunkanmi! */
-		 div{opacity: 1;
-  position: relative;
-  animation: mymove 2s 1;
-}
+<title>form</title>
+<meta name=viewport width="device-width  initial-scale=1.0">
+<meta name=Ajayiolasunkanmi content=form>
+</head>
+<style>
+    body{background-image:url("juba.jpg");background-repeat:no-repeat;background-size:cover;}
+    #header{background-color:brown;padding:30px;border:5px solid black;text-align: center;}
+    #caption{background-color: brown;padding: 40px;}
+    th,td{border-style:outset;width:50%;display:ruby-base;text-align:left;table-layout: initial;
+        border:2px solid green;border-left: khaki;padding:20px;}
+    marquee{text-decoration: underline;}
+    input:hover{border:2px solid brown;outline: none;}
+    input{border-style: 30%;}
+    select{background-color: brown;}
+    option{background-color: grey;color:black;}
+    select{background-color:black;color:white;}
+    .btn:hover{background-color:lightgrey;border-style: outset;}
+</style>
+<body>
+    <div>
+    <h1 id="header">32TH ARTILLERY,MILLITARY BARRACKS RECRUIT</h1>
+    <marquee>APPLICANT MUST BE MORE THAN 18YRS OF AGE...AND MUST BE PHYSICALLY <span>FIT</span></marquee>
+    <action="/action_page.php" method="post">
+    <table>
+        <caption id="caption"><b>PERSONAL INFO<b></caption>
+            <tr>
+                <th>SURNAME:</th>
+                <td><input type="text" name="LASTNAME"></td>
+                <th>OTHER NAMES:</th>
+                <td><input type="text" name="OTHERNAME"></td><br>
+                <br>
+                <th>PHONE NUMBER:</th>
+                <td><input type="text" name="zipcode" placeholder="+123"></td>
+                <br>
+                <th>EMAIL:</th>
+                <td><input type="email" name="email" id="email"></td>
+                <tr>
+              <th>STATE:</th>
+              <td><select>
+                  <option>-SELECT STATE-</option>
+                  <option>ONDO</option>
+                  <option>EKITI</option>
+                  <option>AKURE</option>
+                  <option>KOGI</option>
+                  <option>LAGOS</option>
+                  <option>ABIA</option>
+                  <option>BAUCH</option>
+                  </select>
+              </td>  
+            </tr>
+                <tr>
+                    <th>MARITAL STATUS:</th>
+                    <td><select>
+                        <option>-MARITAL SELECT-</option>
+                        <option>SINGLE</option>
+                        <option>MARRIED</option>
+                        <option>DIVORCED</option>
+                        </select>
+                        </td>
+                        </tr>
+            <tr>
+            <th>ADDRESS:</th>
+                <td><input type="text" name="address" ></td>
+                </tr>
+                <tr>
+            <tr>
+                <th>QUALIFICATION:</th>
+                <td>B/Sc</td>
+                <td><input type="checkbox"  name="BSC"></td>
+                <td>HND</td>
+                <td><input type="checkbox"  name="HND"></td>
+               <td> OLEVEL</td>
+                <td><input type="checkbox"  name="QUALIFICATION"></td>
 
-@keyframes mymove {
-  from {font-size: 5px;}
-  to {font-size:16px;}
-}
-		
-		h1:hover{font-style: italic;}
-		input:hover{width:210px;border:5px solid aquamarine;border-radius: 20px;font-family: comic sans ms;}
-    				input{width:200px;height:40px;outline: none;}
-  div{background-image:url(301848.jpg);text-align:center;border:2px solid teal;
-	margin-right: 50px;margin-left: 50px;padding:10uv;
-	border-radius:50px;margin-top:150px;
-	box-shadow:5px 5px 5px aquamarine;}
-    				.btn{color:teal;border-radius:50px;
-						 background:none;text-align:center;
-						 border:1px solid teal;}
-    				h1{color:teal;text-shadow:2px 2px 5px grey; 
-						padding:5%;}
-    				span{background-color: aquamarine;}
-    			code{color:teal;}
-    		</style>
-    		<body style="background-color:black; opacity:0.7;">
-    						<div>
-    						<h1>FRONT-<span><del>>END</del></span></h1>
-    						<form action="action-page.php">
-    						<input type="email" name="Email" placeholder="Email" class="btn">
-    						<br>
-    						<br>
-    						<input type="password" name="pwd" placeholder="password" class="btn">
-    						<br>
-    						<br>
-    						<input type="submit" class="btn" value="Log in">
-    						<br>
-							<br>
-    </form>
-    						</div>
-		
+            </tr>
+            <tr>
+                <th>UPLOAD PASSPORT:</th>
+                <td><input type="file" name="file"></td>
+                <th>SELECT GENDER:</th>
+               <Td>MALE</Td>
+                <td><input type="radio" name="GEN"></td>
+               <td>FEMALE</td>
+                <td><input type="radio" name="GEN"></td>
+            </tr>
+    </table>
+    <marquee style="color:red">Maximum 300kb</marquee>
+    </action>
+    <action="action_page.php" method="post">
+    <table>
+        <caption id="caption">OTHER INFORMATION</p></caption>
+        <tr>
+            <th>HEIGHT:</th>
+            <td><input type="text" name="HEIGHT"></td>
+            <th>DISABILITY:</th>
+            <td><input type="text" name="DISABILITY"></td><br>
+            <br>
+            <th>AGE:</th>
+            <td><input type="text" name="AGE" ></td>
+            <tr>
+    </table>
+    <action="action_page.php" method="get">
+        <input type="button" name="submit" value="SUBMIT" class="btn">
+
+</div>
+</action>
+
+
+
 </body>
-</html>
