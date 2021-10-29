@@ -1,112 +1,51 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-<title>form</title>
-<meta name=viewport width="device-width  initial-scale=1.0">
-<meta name=Ajayiolasunkanmi content=form>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <style>
-    body{background-image:url("juba.jpg");background-repeat:no-repeat;background-size:cover;}
-    #header{background-color:brown;padding:30px;border:5px solid black;text-align: center;}
-    #caption{background-color: brown;padding: 40px;}
-    th,td{border-style:outset;width:50%;display:ruby-base;text-align:left;table-layout: initial;
-        border:2px solid green;border-left: khaki;padding:20px;}
-    marquee{text-decoration: underline;}
-    input:hover{border:2px solid brown;outline: none;}
-    input{border-style: 30%;}
-    select{background-color: brown;}
-    option{background-color: grey;color:black;}
-    select{background-color:black;color:white;}
-    .btn:hover{background-color:lightgrey;border-style: outset;}
+    body{background-color:aqua;
+        display:flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    p{background-color: yellow;font-family:comic sans ms;height: auto;}
+
+    div{ max-width: 150px;
+        max-height: 200px;
+    background-color:rgba(7, 250, 177, 0.904);
+    padding: 60px;margin-top: 120px;text-align: center;
+    border-radius: 50px;
+    border-bottom: 2px solid rgb(10, 156, 107);
+    border-top-left-radius: 120px;}
 </style>
 <body>
     <div>
-    <h1 id="header">32TH ARTILLERY,MILLITARY BARRACKS RECRUIT</h1>
-    <marquee>APPLICANT MUST BE MORE THAN 18YRS OF AGE...AND MUST BE PHYSICALLY <span>FIT</span></marquee>
-    <action="/action_page.php" method="post">
-    <table>
-        <caption id="caption"><b>PERSONAL INFO<b></caption>
-            <tr>
-                <th>SURNAME:</th>
-                <td><input type="text" name="LASTNAME"></td>
-                <th>OTHER NAMES:</th>
-                <td><input type="text" name="OTHERNAME"></td><br>
-                <br>
-                <th>PHONE NUMBER:</th>
-                <td><input type="text" name="zipcode" placeholder="+123"></td>
-                <br>
-                <th>EMAIL:</th>
-                <td><input type="email" name="email" id="email"></td>
-                <tr>
-              <th>STATE:</th>
-              <td><select>
-                  <option>-SELECT STATE-</option>
-                  <option>ONDO</option>
-                  <option>EKITI</option>
-                  <option>AKURE</option>
-                  <option>KOGI</option>
-                  <option>LAGOS</option>
-                  <option>ABIA</option>
-                  <option>BAUCH</option>
-                  </select>
-              </td>  
-            </tr>
-                <tr>
-                    <th>MARITAL STATUS:</th>
-                    <td><select>
-                        <option>-MARITAL SELECT-</option>
-                        <option>SINGLE</option>
-                        <option>MARRIED</option>
-                        <option>DIVORCED</option>
-                        </select>
-                        </td>
-                        </tr>
-            <tr>
-            <th>ADDRESS:</th>
-                <td><input type="text" name="address" ></td>
-                </tr>
-                <tr>
-            <tr>
-                <th>QUALIFICATION:</th>
-                <td>B/Sc</td>
-                <td><input type="checkbox"  name="BSC"></td>
-                <td>HND</td>
-                <td><input type="checkbox"  name="HND"></td>
-               <td> OLEVEL</td>
-                <td><input type="checkbox"  name="QUALIFICATION"></td>
+    <h1>BIRTH DATE APP</h1>
+    <br>
+    <br>
+    <input type="text/number" id="age" placeholder="enter birth year">
+    <br>
+    <br>
+    <button onclick="myfunction()">click me</button>
+    <p id="demo"></p>
+    </div>
 
-            </tr>
-            <tr>
-                <th>UPLOAD PASSPORT:</th>
-                <td><input type="file" name="file"></td>
-                <th>SELECT GENDER:</th>
-               <Td>MALE</Td>
-                <td><input type="radio" name="GEN"></td>
-               <td>FEMALE</td>
-                <td><input type="radio" name="GEN"></td>
-            </tr>
-    </table>
-    <marquee style="color:red">Maximum 300kb</marquee>
-    </action>
-    <action="action_page.php" method="post">
-    <table>
-        <caption id="caption">OTHER INFORMATION</p></caption>
-        <tr>
-            <th>HEIGHT:</th>
-            <td><input type="text" name="HEIGHT"></td>
-            <th>DISABILITY:</th>
-            <td><input type="text" name="DISABILITY"></td><br>
-            <br>
-            <th>AGE:</th>
-            <td><input type="text" name="AGE" ></td>
-            <tr>
-    </table>
-    <action="action_page.php" method="get">
-        <input type="button" name="submit" value="SUBMIT" class="btn">
-
-</div>
-</action>
-
-
-
+    <script>
+        function myfunction(){
+       var year = document.getElementById("age").value;
+       var age =2021 - year;
+       var length = 00;
+       document.getElementById("demo").innerHTML=`you,re ${age} yrs old `;
+     if(year == "" || year == null){
+         document.getElementById("demo").innerHTML=`space cannot be blank`;
+    
+     }
+    }
+        </script>
 </body>
+</html>
