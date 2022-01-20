@@ -6,6 +6,7 @@ body{
     padding: 0;
     overflow-x: hidden;
 }
+p{color:grey;}
 .spari{
     width: 100vw;
     height: 100vh;
