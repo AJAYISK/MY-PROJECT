@@ -1,0 +1,197 @@
+label, input, textarea {
+    display:block;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.spari{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+.entry{
+    display:flex;
+    flex-direction: row;
+    margin-left: 180px;
+    width: 80%;
+    padding-top: 120px;
+    background-color: #f0f2f5;
+}
+.katror1{
+    padding: 10px;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+.katror2{
+    padding: 10px 15px;
+    padding-bottom: 0;
+    margin-left: 50px;
+    background-color: #ffffff;
+    border-radius:8px;
+    border: 1px solid #e9ebee;
+    height:20rem;
+    box-shadow: 1px 2px 24px -11px rgba(0,0,0,0.75);
+    
+}
+.message{
+    height: 32px;
+    width: 20rem;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    background-color: #ffffff;
+    outline-color: #1a76f1; 
+    outline-width:thin;
+    border:0.5px solid #e9ebee;
+    padding: 6px;
+    border-radius: 6px;
+}
+.opa{
+    display: none;
+}
+.subject{
+    height: 32px;
+    width: 20rem;
+    margin-top: 5px;
+    background-color: #ffffff;
+    outline-color: #1a76f1; 
+    outline-width:thin;
+    border:0.5px solid #e9ebee;
+    padding: 6px;
+    border-radius: 6px;
+}
+.submit{
+    height: 45px;
+    width: 20rem;
+    position: relative;
+    top: 13px;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 22px;
+    margin-left: 4px;
+    background-color: #1a76f1;
+    border: none;
+    color: #fefefe;
+    outline:none;
+    cursor: pointer; 
+}
+.submit:hover{
+    opacity:0.95;
+}
+.forgina{
+    width:100%;
+    border-bottom: 1px solid #e9ebee;
+    position: relative;
+    top: 20px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.forgi{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #1a76f1;
+}
+.poshti{
+    padding-top: 20px;
+    padding-left: 190px;
+}
+.shopti{
+    cursor: pointer;
+}
+.criti{
+    margin-left: 70px;
+    padding-top: 35px;  
+    cursor: pointer; 
+}
+.criti:hover{
+    opacity:0.95;
+}
+
+.bandi{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: right;
+    font-weight: 400;
+    margin-right: 160px;
+    padding-right: 135px;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.pagji{
+    font-weight: 500;
+}
+.mobi{
+    display: none;
+}
+@media (max-width: 960px){
+    .mobi{
+        display: block;
+    }
+    .spari{
+        display: none;
+    }
+    .poshti{
+        display: none;
+    }
+    .pertel{
+        width: 100%;
+    }
+    .fasa{
+        margin-left:27%;
+        width: 43%;
+    }
+    .imella,
+    .message{
+        background: rgba(186,199,219,0.45);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .permobi{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .loga{
+    height: 45px;
+    width: 80%;
+    position: relative;
+    top: 13px;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 22px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #1a76f1;
+    border: none;
+    color: #fefefe;
+    outline:none;
+    cursor: pointer; 
+    }
+    .ori{
+        width: 80%;
+        margin-left: 9%;
+        margin-top: 11px;
+    }
+    .kriejt{
+        margin-left: 23%;
+    }
+    .poshtel{
+        width: 100%;
+    }
+    .forgoti{
+        text-align: center;
+        position: relative;
+        top: -10px;
+        margin-right: 10px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #bac7db;
+        cursor: pointer;
+    }
+}
+.heke{
+    display: none;
+}
